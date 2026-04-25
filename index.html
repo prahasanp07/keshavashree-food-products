@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Keshavashree Food Products | The Art of Coastal Alchemy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script src="scripts/tailwind-config.js" id="tailwind-config"></script>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <!-- TopNavBar -->
+    <nav style="background-color: #D30000;"
+        class="fixed top-0 w-full z-50 bg-stone-50/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-sm shadow-emerald-900/5 transition-all duration-500">
+        <div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+            <div class="text-4xl font-serif italic text-[#D4AF37] dark:text-[#D4AF37] tracking-[0.1em]">
+                Keshavashree <br> Food Products
+            </div>
+            <div class="hidden md:flex gap-10 items-center">
+                <a class="font-sans text-2xl tracking-wide text-[#D4AF37] dark:text-[#D4AF37] border-b border-[#D4AF37]/20 pb-1 hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors duration-400"
+                    href="#">Our Story</a>
+                <a class="font-sans text-2xl tracking-wide text-[#D4AF37] dark:text-[#D4AF37] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors duration-400"
+                    href="#menu">Menu</a>
+                <a class="font-sans text-2xl tracking-wide text-[#D4AF37] dark:text-[#D4AF37] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors duration-400"
+                    href="#gallery">Gallery</a>
+                <a class="font-sans text-2xl tracking-wide text-[#D4AF37] dark:text-[#D4AF37] hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors duration-400"
+                    href="#reservations">Reservations</a>
+            </div>
+            <!-- <button
+                class="bg-primary text-on-primary px-8 py-3 rounded-md font-label uppercase tracking-widest text-md active:scale-95 transition-all duration-200 cubic-bezier(0.22, 1, 0.36, 1) bloom-effect">
+                Call Us
+            </button> -->
+        </div>
+    </nav>
+    <main>
+        <!-- Heritage Hero -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <!-- <img class="w-full h-full object-cover scale-105"
+                    data-alt="atmospheric cinematic shot of a high-end coastal restaurant interior"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9i97MfbKx_yIn9DU88k5c4YxQBeUf0HWtssWnibI4J57RVLccCxBBFgxmfmoHWl6AYh5FcfFkYV-xg0a7FS3habSY60gfxsFcjyesrpUNDZ3x0sP-rOKFeUu8LCxaDzZJ3kkAmYBT-t7rsYTZ6yBQ-LTc7Ui2xZ6xozIznJZwcLJI48YQ4ENmigGpPWHcCrlf564vJ7_Ts4IkHyDL23IUq8eFhisPsYu3URV9HZ6Qj1BvtLH0fspVUKfc6_SziyQuz-S2vu7OexTn"
+                    style="filter: brightness(0.75);"> -->
+                <video class="w-full h-full object-cover scale-105" style="filter: brightness(0.75);" autoplay muted
+                    loop playsinline>
+                    <source src="/assets/hero-bg-video.MOV" type="video/mp4" />
+                    <!-- Fallback text -->
+                    Your browser does not support the video tag.
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-surface"></div>
+            </div>
+            <div class="relative z-10 text-center px-6 reveal-on-scroll active">
+                <p class="font-label uppercase tracking-[0.4em] text-white/80 text-xs md:text-sm mb-4">
+                    Established 2017</p>
+                <h1 class="font-headline text-4xl md:text-5xl lg:text-8xl text-white tracking-tight leading-none mb-12">
+                    Tasty - Hygienic- Aromatic <br> <span
+                        class="italic font-light text-3xl md:text-6xl lg:text-5xl">Homemade Traditional Iyengar Food
+                        Products</span>
+                </h1>
+                <div class="flex flex-col items-center gap-6">
+                    <!-- <a class="bg-white text-primary px-10 py-4 rounded-full font-label uppercase tracking-widest text-xs hover:bg-primary-fixed transition-all"
+                        href="#reservations">Secure Your Table</a> -->
+                    <button
+                        class="bg-primary text-on-primary px-8 py-3 rounded-md font-label uppercase tracking-widest text-md active:scale-95 transition-all duration-200 cubic-bezier(0.22, 1, 0.36, 1) bloom-effect">
+                        Call Us
+                    </button>
+                    <div class="w-px h-16 bg-white/40 mt-8 text-white"></div>
+                </div>
+            </div>
+        </section>
+        <!-- The Journey -->
+        <section class="py-32 px-6 md:px-24 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+                <div class="md:col-span-4 sticky top-40 reveal-on-scroll active">
+                    <h2 class="font-label uppercase tracking-[0.2em] text-secondary text-sm mb-6">Vydehi Ranganath's KFP
+                    </h2>
+                    <!-- <h3 class="font-headline text-4xl md:text-5xl text-primary leading-tight mb-2">KFP
+                    </h3> -->
+                    <!-- <p class="mt-8 text-on-surface-variant max-w-xs"> -->
+                    <img src="assets/vydehi.png" alt="Decorative vertical" class="w-full h-full object-cover">
+                    <ul class="mt-8">
+                        <li>100% homemade</li>
+                        <li>Authentic Heritage</li>
+                        <li>Made to Order</li>
+                        <li>Ships Worldwide</li>
+                    </ul>
+                    <!-- </p> -->
+                </div>
+                <div class="md:col-span-8 relative">
+                    <div class="absolute left-0 top-0 w-px h-full bg-outline-variant/30"></div>
+                    <!-- Vertical image (design) -->
+                    <!-- <div
+                        class="hidden lg:block absolute -right-8 top-0 h-full w-44 overflow-hidden rounded-l-2xl shadow-md">
+                        <img src="assets/vydehi.png" alt="Decorative vertical" class="w-full h-full object-cover">
+                    </div> -->
+                    <div class="space-y-32 pl-12">
+                        <div class="group relative reveal-on-scroll active">
+                            <div
+                                class="absolute -left-[53px] top-2 w-3 h-3 rounded-full bg-primary ring-8 ring-surface">
+                            </div>
+                            <span
+                                class="font-label text-xs uppercase tracking-widest text-on-surface/40 mb-4 block">Origin
+                                • 2017</span>
+                            <h4 class="font-headline text-3xl text-on-surface mb-6">Born of KFP</h4>
+                            <p class="font-body text-lg text-on-surface-variant leading-relaxed max-w-xl">
+                                KFP emerged from a simple desire with small investment serving authentic Iyengar food
+                                items into a contemporary archival experience.
+                            </p>
+                        </div>
+                        <div class="group relative reveal-on-scroll active">
+                            <div
+                                class="absolute -left-[53px] top-2 w-3 h-3 rounded-full bg-outline-variant ring-8 ring-surface group-hover:bg-primary transition-colors">
+                            </div>
+                            <span
+                                class="font-label text-xs uppercase tracking-widest text-on-surface/40 mb-4 block">Passion</span>
+                            <h4 class="font-headline text-3xl text-on-surface mb-6">The Passion</h4>
+                            <p class="font-body text-lg text-on-surface-variant leading-relaxed max-w-xl">
+                                A lifelong love for authentic Iyengar recipes passed down through generations — no
+                                shortcuts, no preservatives.
+                            </p>
+                        </div>
+                        <div class="group relative reveal-on-scroll active">
+                            <div
+                                class="absolute -left-[53px] top-2 w-3 h-3 rounded-full bg-outline-variant ring-8 ring-surface group-hover:bg-primary transition-colors">
+                            </div>
+                            <span
+                                class="font-label text-xs uppercase tracking-widest text-on-surface/40 mb-4 block">Mission</span>
+                            <h4 class="font-headline text-3xl text-on-surface mb-6">The Mission</h4>
+                            <p class="font-body text-lg text-on-surface-variant leading-relaxed max-w-xl">
+                                To bring the comfort of homemade Iyengar food to families who miss the taste of
+                                tradition.
+                            </p>
+                        </div>
+                        <div class="group relative reveal-on-scroll active">
+                            <div
+                                class="absolute -left-[53px] top-2 w-3 h-3 rounded-full bg-outline-variant ring-8 ring-surface group-hover:bg-primary transition-colors">
+                            </div>
+                            An exploration of Konkan memories through the lens of modern botanical precision.
+
+                            <span
+                                class="font-label text-xs uppercase tracking-widest text-on-surface/40 mb-4 block">Business</span>
+                            <h4 class="font-headline text-3xl text-on-surface mb-6">The Business</h4>
+                            <p class="font-body text-lg text-on-surface-variant leading-relaxed max-w-xl">
+                                Keshavashree Food Products — handcrafted powders, pickles, snacks, dabba meals, and
+                                ready-to-eat items, made fresh to order.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Interactive Menu Showcase -->
+        <section class="bg-surface-container-low py-32 overflow-hidden" id="menu">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-24 reveal-on-scroll active">
+                    <h2 class="font-label uppercase tracking-[0.3em] text-secondary text-xs mb-4">The Culinary
+                        Archive</h2>
+                    <h3 class="font-headline text-5xl md:text-7xl text-primary mb-8">Seasonal Expressions</h3>
+                    <div class="flex flex-wrap justify-center gap-12 mt-12 border-b border-primary/10 pb-6">
+                        <button data-tab="botanical"
+                            class="font-headline text-xl text-primary/40 hover:text-primary transition-colors pb-4">
+                            Pickles & Chutneys
+                        </button>
+                        <button data-tab="main"
+                            class="font-headline text-xl text-primary border-b-2 border-primary transition-colors pb-4">
+                            Powders & Mixes
+                        </button>
+                        <button data-tab="sweet"
+                            class="font-headline text-xl text-primary/40 hover:text-primary transition-colors pb-4">
+                            Condiments & Sweets
+                        </button>
+                    </div>
+                    <!-- No products placeholder (hidden by default) -->
+                    <div id="no-products"
+                        class="hidden bg-surface p-12 rounded-lg flex flex-col justify-center items-center text-center reveal-on-scroll">
+                        <h4 class="font-headline text-2xl text-on-surface mb-4">No items in this category</h4>
+                        <p class="text-on-surface-variant">We don't have items for this selection yet.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-24">
+                    <!-- Dish 1 -->
+                    <div data-category="main" class="flex flex-col gap-8 reveal-on-scroll active">
+                        <div class="aspect-[16/10] overflow-hidden rounded-lg group">
+                            <img alt="Konkan Claypot Barramundi"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                                src="assets/sambar-powder.JPG" style="">
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline border-b border-primary/10 pb-4 mb-4">
+                                <h4 class="font-headline text-3xl text-primary italic" style="">Sambar Powder</h4>
+                                <!-- <span class="font-label text-primary/60" style="">₹1,250</span> -->
+                            </div>
+                            <!-- <p class="font-body text-on-surface-variant leading-relaxed" style="">Line-caught
+                                barramundi, slow-simmered in a hand-pressed coconut and teppal berry reduction. Served
+                                in a custom-fired terracotta vessel.</p> -->
+                        </div>
+                    </div>
+                    <!-- Dish 2 -->
+                    <div data-category="main" class="flex flex-col gap-8 reveal-on-scroll staggered-item active">
+                        <div class="aspect-[16/10] overflow-hidden rounded-lg group">
+                            <img alt="pepper-rasam"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                                src="assets/pepper-rasam.JPG" style="">
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline border-b border-primary/10 pb-4 mb-4">
+                                <h4 class="font-headline text-3xl text-primary italic" style="">Pepper Rasam Powder</h4>
+                                <span class="font-label text-primary/60" style="">₹1,400</span>
+                            </div>
+                            <!-- <p class="font-body text-on-surface-variant leading-relaxed" style="">Jumbo Malabar prawns
+                                marinated in a fermented chili-tamarind paste, finished over white-oak embers for a
+                                delicate smokiness.</p> -->
+                        </div>
+                    </div>
+                    <!-- Dish 3 -->
+                    <div data-category="main" class="flex flex-col gap-8 reveal-on-scroll active">
+                        <div class="aspect-[16/10] overflow-hidden rounded-lg group">
+                            <img alt="chutney-puliyogare-kari-methi"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                                src="assets/chutney-puliyogare-kari-methi.JPG">
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline border-b border-primary/10 pb-4 mb-4">
+                                <h4 class="font-headline text-3xl text-primary italic" style="">Chutney Pudi <br>
+                                    Puliyogare Gojju <br> Kari Methi Powder</h4>
+                                <!-- <span class="font-label text-primary/60">₹850</span> -->
+                            </div>
+                            <!-- <p class="font-body text-on-surface-variant leading-relaxed" style="">A botanical gin
+                                infusion with butterfly pea flower, coastal samphire, and a splash of house-distilled
+                                citrus bitters.</p> -->
+                        </div>
+                    </div>
+
+                    <!-- Dish 4 -->
+                    <div data-category="botanical" class="flex flex-col gap-8 reveal-on-scroll active">
+                        <div class="aspect-[16/10] overflow-hidden rounded-lg group">
+                            <img alt="Pickles"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                                src="assets/pickles.JPG">
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline border-b border-primary/10 pb-4 mb-4">
+                                <h4 class="font-headline text-3xl text-primary italic">
+                                    Seasonal Special - Mango Pickles <br>
+                                    Seasonal Special - Amtekai Pickles
+                                    Lemon Pickles <br>
+                                    Citron Pickles <br>
+                                </h4>
+                                <!-- <span class="font-label text-primary/60">₹850</span> -->
+                            </div>
+                            <!-- <p class="font-body text-on-surface-variant leading-relaxed" style="">A botanical gin
+                            infusion with butterfly pea flower, coastal samphire, and a splash of house-distilled
+                            citrus bitters.</p> -->
+                        </div>
+                    </div>
+
+                    <!-- Dish 5 -->
+                    <div data-category="sweet" class="flex flex-col gap-8 reveal-on-scroll active">
+                        <div class="aspect-[16/10] overflow-hidden rounded-lg group">
+                            <img alt="besan ladoo"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                                src="assets/besan-ladoo.JPG">
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline border-b border-primary/10 pb-4 mb-4">
+                                <h4 class="font-headline text-3xl text-primary italic">
+                                    Besan Ladoo</h4>
+                                <!-- <span class="font-label text-primary/60">₹850</span> -->
+                            </div>
+                            <!-- <p class="font-body text-on-surface-variant leading-relaxed" style="">A botanical gin
+                                infusion with butterfly pea flower, coastal samphire, and a splash of house-distilled
+                                citrus bitters.</p> -->
+                        </div>
+                    </div>
+
+                    <!-- Dish 6 -->
+                    <div data-category="sweet" class="flex flex-col gap-8 reveal-on-scroll active">
+                        <div class="aspect-[16/10] overflow-hidden rounded-lg group">
+                            <img alt="chakkuli"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                                src="assets/chakkuli.JPG">
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline border-b border-primary/10 pb-4 mb-4">
+                                <h4 class="font-headline text-3xl text-primary italic">
+                                    Chakkuli</h4>
+                                <!-- <span class="font-label text-primary/60">₹850</span> -->
+                            </div>
+                            <!-- <p class="font-body text-on-surface-variant leading-relaxed" style="">A botanical gin
+                                infusion with butterfly pea flower, coastal samphire, and a splash of house-distilled
+                                citrus bitters.</p> -->
+                        </div>
+                    </div>
+
+                    <!-- Dish 7 -->
+                    <div data-category="sweet" class="flex flex-col gap-8 reveal-on-scroll active">
+                        <div class="aspect-[16/10] overflow-hidden rounded-lg group">
+                            <img alt="kodbale"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                                src="assets/kodbale.JPG">
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline border-b border-primary/10 pb-4 mb-4">
+                                <h4 class="font-headline text-3xl text-primary italic">
+                                    Kodbale</h4>
+                                <!-- <span class="font-label text-primary/60">₹850</span> -->
+                            </div>
+                            <!-- <p class="font-body text-on-surface-variant leading-relaxed" style="">A botanical gin
+                                infusion with butterfly pea flower, coastal samphire, and a splash of house-distilled
+                                citrus bitters.</p> -->
+                        </div>
+                    </div>
+                    <!-- Call to Action Card -->
+                    <div data-cta="true"
+                        class="bg-primary p-12 rounded-lg flex flex-col justify-center items-center text-center reveal-on-scroll staggered-item active">
+                        <h4 class="font-headline text-3xl text-white mb-6">Call Us for more information</h4>
+                        <!-- <p class="text-white/70 mb-8 font-body" style="">For more information, please call us at +91-8553375288.</p> -->
+                        <a class="bg-white text-primary px-10 py-4 rounded-md font-label uppercase tracking-widest text-xs hover:bg-stone-100 transition-all"
+                            style="" href="tel:+918553375288">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Immersive Visual Archive (Gallery) -->
+        <section class="py-32 bg-surface" id="gallery">
+            <div class="max-w-screen-2xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 reveal-on-scroll active">
+                    <div>
+                        <h2 class="font-label uppercase tracking-[0.2em] text-on-surface/50 text-xs mb-4" style="">
+                            Cinematic Glimpses</h2>
+                        <h3 class="font-headline text-5xl text-primary" style="">The Visual Archive</h3>
+                    </div>
+                    <div class="mt-8 md:mt-0">
+                        <a class="font-label uppercase tracking-widest text-xs border-b border-primary/20 pb-2 hover:border-primary transition-all"
+                            href="https://www.instagram.com/mysuru.keshavashree?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            style="">Follow the Story @mysuru_keshavashree</a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-[1200px] md:h-[800px]">
+                    <div class="md:col-span-8 overflow-hidden rounded-xl reveal-on-scroll active">
+                        <!-- <img alt="Restaurant Interior"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-[2s]"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9i97MfbKx_yIn9DU88k5c4YxQBeUf0HWtssWnibI4J57RVLccCxBBFgxmfmoHWl6AYh5FcfFkYV-xg0a7FS3habSY60gfxsFcjyesrpUNDZ3x0sP-rOKFeUu8LCxaDzZJ3kkAmYBT-t7rsYTZ6yBQ-LTc7Ui2xZ6xozIznJZwcLJI48YQ4ENmigGpPWHcCrlf564vJ7_Ts4IkHyDL23IUq8eFhisPsYu3URV9HZ6Qj1BvtLH0fspVUKfc6_SziyQuz-S2vu7OexTn"
+                            style=""> -->
+                        <video class="w-full h-full object-contain scale-105" style="filter: brightness(0.75);" autoplay
+                            muted loop playsinline>
+                            <source src="/assets/rasam-powder.MOV" type="video/mp4" />
+                            <!-- Fallback text -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="md:col-span-4 grid grid-rows-2 gap-6">
+                        <div class="overflow-hidden rounded-xl reveal-on-scroll active">
+                            <video class="w-full h-full object-contain scale-105" style="filter: brightness(0.75);"
+                                autoplay muted loop playsinline>
+                                <source src="/assets/group-2.MOV" type="video/mp4" />
+                                <!-- Fallback text -->
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="overflow-hidden rounded-xl reveal-on-scroll active">
+                            <img alt="Plating Artistry"
+                                class="w-full h-full object-cover hover:scale-110 transition-transform duration-[2s]"
+                                src="assets/group-1.JPG" style="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Sanctuary / Location Section -->
+        <section class="py-32 px-6 bg-stone-100">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                <div class="reveal-on-scroll active">
+                    <h2 class="font-label uppercase tracking-[0.2em] text-secondary text-xs mb-4" style="">Visit Us</h2>
+                    <h3 class="font-headline text-5xl text-primary mb-8" style="">Our Sanctuary in <br>V.V Mohalla,
+                        Mysuru</h3>
+                    <p class="font-body text-lg text-on-surface-variant leading-relaxed mb-10" style="">
+                        Located in the heart of Mysuru, KFP is a lifelong love for authentic Iyengar recipes passed down
+                        through generations — no shortcuts, no preservatives.
+                    </p>
+                    <div class="space-y-6 mb-12">
+                        <div class="flex gap-4 items-start">
+                            <!-- <span class="material-symbols-outlined text-secondary" style="">schedule</span> -->
+                            <div>
+                                <!-- <p class="font-label text-xs uppercase tracking-widest text-primary mb-1" style="">Hours
+                                    of Service</p> -->
+                                <p class="font-body text-2xl" style="">Shipping available across India and abroad</p>
+                                <p class="font-body text-md" style="">Retailers and Distributors can also contact</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <span class="material-symbols-outlined text-secondary" style="">location_on</span>
+                            <div>
+                                <p class="font-label text-xs uppercase tracking-widest text-primary mb-1" style="">
+                                    Address</p>
+                                <p class="font-body" style="">D34/A 1st Floor, 12th Cross, V.V Mohalla, Mysuru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <!-- <button
+                            class="bg-primary text-on-primary px-8 py-4 rounded-md font-label uppercase tracking-widest text-xs hover:shadow-lg transition-all"
+                            style="">Get Directions</button> -->
+                        <!-- <button
+                            class="border border-primary text-primary px-8 py-4 rounded-md font-label uppercase tracking-widest text-xs hover:bg-primary hover:text-white transition-all"
+                            style="">Call for Inquiries</button> -->
+                        <a href="tel:+91-8553375288"
+                            class="bg-primary text-on-primary px-8 py-4 rounded-md font-label uppercase tracking-widest text-xs hover:shadow-lg transition-all">Call
+                            for Inquiries</a>
+                    </div>
+                </div>
+                <div class="relative reveal-on-scroll active">
+                    <div
+                        class="aspect-square bg-surface shadow-2xl rounded-2xl overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-1000">
+                        <!-- Placeholder for a Stylized Map Visual -->
+                        <div class="absolute inset-0 bg-[#efe7d9] flex items-center justify-center p-0">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.8560230828666!2d76.62209397538145!3d12.32547608793367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7bd8474d5de7%3A0x1af9dec6a551fc66!2sKeshavashree%20Food%20Products!5e0!3m2!1sen!2sin!4v1777101000081!5m2!1sen!2sin"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reservations -->
+        <!-- <section class="py-32 px-6 bg-surface-container-high relative overflow-hidden" id="reservations">
+            <div
+                class="max-w-4xl mx-auto bg-surface-container-lowest p-12 md:p-24 relative z-10 shadow-2xl shadow-on-surface/5 reveal-on-scroll active">
+                <div class="text-center mb-16">
+                    <h2 class="font-label uppercase tracking-[0.3em] text-secondary text-xs mb-4" style="">Reservation
+                    </h2>
+                    <h3 class="font-headline text-4xl md:text-5xl text-primary" style="">Join the Archive</h3>
+                    <p class="mt-6 font-body text-on-surface-variant/70 italic" style="">Reservations are recommended
+                        for the full experience.</p>
+                </div>
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+                    <div class="relative group">
+                        <label class="font-label text-[10px] uppercase tracking-widest text-on-surface/50 mb-2 block"
+                            style="">Full Name</label>
+                        <input
+                            class="w-full bg-transparent border-0 border-b border-outline-variant/40 py-2 px-0 focus:ring-0 focus:border-primary transition-all font-body text-on-surface placeholder:text-outline-variant/60"
+                            placeholder="Arthur Morgan" type="text">
+                    </div>
+                    <div class="relative group">
+                        <label class="font-label text-[10px] uppercase tracking-widest text-on-surface/50 mb-2 block"
+                            style="">Email Address</label>
+                        <input
+                            class="w-full bg-transparent border-0 border-b border-outline-variant/40 py-2 px-0 focus:ring-0 focus:border-primary transition-all font-body text-on-surface placeholder:text-outline-variant/60"
+                            placeholder="arthur@archive.com" type="email">
+                    </div>
+                    <div class="relative group">
+                        <label class="font-label text-[10px] uppercase tracking-widest text-on-surface/50 mb-2 block"
+                            style="">Party Size</label>
+                        <select
+                            class="w-full bg-transparent border-0 border-b border-outline-variant/40 py-2 px-0 focus:ring-0 focus:border-primary transition-all font-body text-on-surface">
+                            <option>2 Guests</option>
+                            <option>4 Guests</option>
+                            <option>6 Guests</option>
+                            <option>Private Event</option>
+                        </select>
+                    </div>
+                    <div class="relative group">
+                        <label class="font-label text-[10px] uppercase tracking-widest text-on-surface/50 mb-2 block"
+                            style="">Preferred Date</label>
+                        <input
+                            class="w-full bg-transparent border-0 border-b border-outline-variant/40 py-2 px-0 focus:ring-0 focus:border-primary transition-all font-body text-on-surface"
+                            type="date">
+                    </div>
+                    <div class="md:col-span-2 pt-8">
+                        <button
+                            class="w-full bg-primary text-on-primary py-5 rounded-md font-label uppercase tracking-[0.2em] text-sm hover:bg-primary-container transition-all hover:shadow-xl shadow-primary/20"
+                            style="">
+                            Confirm Attendance
+                        </button>
+                        <p class="text-center mt-6 font-body text-[10px] text-on-surface-variant/40 uppercase tracking-widest"
+                            style="">A confirmation will be dispatched to your email.</p>
+                    </div>
+                </form>
+            </div>
+            <div class="absolute -bottom-24 -right-24 opacity-5 pointer-events-none">
+                <span class="material-symbols-outlined text-[40rem]" data-icon="auto_awesome"
+                    style="">auto_awesome</span>
+            </div>
+        </section> -->
+    </main>
+    <!-- Footer -->
+    <footer class="bg-stone-200 dark:bg-stone-950 w-full py-16 px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto">
+            <div>
+                <span class="font-serif text-xl mb-4 block text-emerald-900 dark:text-emerald-50 italic">Keshavashree
+                    Food Products</span>
+                <p class="font-sans text-xs uppercase tracking-widest text-emerald-900/50 mb-6" style="">D34/A, 1st
+                    Floor, 12th Cross</p>
+                <p class="font-sans text-xs uppercase tracking-widest text-emerald-900/50" style="">V.V Mohalla, Mysuru
+                </p>
+            </div>
+            <!-- <div class="flex flex-col gap-4">
+                <a class="font-sans text-xs uppercase tracking-widest text-emerald-900/50 hover:text-emerald-700 transition-opacity"
+                    href="#" style="">Menu</a>
+                <a class="font-sans text-xs uppercase tracking-widest text-emerald-900/50 hover:text-emerald-700 transition-opacity"
+                    href="#" style="">Reservations</a>
+                <a class="font-sans text-xs uppercase tracking-widest text-emerald-900/50 hover:text-emerald-700 transition-opacity"
+                    href="#" style="">Contact Us</a>
+                <a class="font-sans text-xs uppercase tracking-widest text-emerald-900/50 hover:text-emerald-700 transition-opacity"
+                    href="#" style="">Privacy Policy</a>
+            </div> -->
+            <div class="flex flex-col gap-4">
+                <a class="font-sans text-xs uppercase tracking-widest text-black hover:text-emerald-700 transition-opacity"
+                    href="https://www.instagram.com/mysuru.keshavashree/" style="">Instagram</a>
+                <!-- <a class="font-sans text-xs uppercase tracking-widest text-black hover:text-emerald-700 transition-opacity"
+                    href="https://www.facebook.com/mysuru.keshavashree/" style="">Facebook</a> -->
+                <div class="mt-8 border-t border-emerald-900/10 pt-4">
+                    <p class="font-sans text-xs uppercase tracking-widest text-emerald-900/50">© 2026 Keshavashree Food
+                        Products. All rights reserved.</p>
+                    <!-- <p class="font-sans text-xs uppercase tracking-widest text-emerald
+                        Finedine. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/scroll-reveal.js"></script>
+    <script src="scripts/menu-tabs.js"></script>
+</body>
+
+</html>
