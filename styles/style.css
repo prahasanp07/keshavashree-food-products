@@ -69,6 +69,57 @@
 /* Make sure cards are fully opaque and visible */
 #reviews .review-card { opacity: 1 !important; transform: none !important; }
 
+/* Journey section: ensure visibility on small screens */
+#journey {
+  color: #1e1b13;
+}
+#journey .font-headline,
+#journey .font-body,
+#journey p,
+#journey h4,
+#journey .font-label {
+  color: #1e1b13 !important;
+}
+
+/* Disable reveal animation for journey so text is visible immediately */
+#journey .reveal-on-scroll { opacity: 1 !important; transform: none !important; }
+
+/* Make sure the left image is visible and not cropped too aggressively on small screens */
+#journey img { object-position: center; }
+@media (max-width: 768px) {
+  #journey img { max-height: 22rem; width: 100%; height: auto; }
+  #journey .space-y-32 { padding-left: 0.75rem; }
+}
+
+/* Make Journey text blocks readable when they overlap the image */
+#journey .space-y-32 > .group {
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 900px) {
+  /* Add a subtle opaque panel behind each text block on narrow viewports */
+  #journey .space-y-32 > .group::before {
+    content: '';
+    position: absolute;
+    inset: -1.25rem -1.5rem -1.25rem  -1.5rem;
+    background: rgba(255,255,255,0.92);
+    border-radius: 8px;
+    z-index: -1;
+    box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  }
+
+  /* Tweak text color to ensure contrast over the panel */
+  #journey .space-y-32 > .group h4,
+  #journey .space-y-32 > .group p,
+  #journey .space-y-32 > .group .font-label {
+    color: #1e1b13 !important;
+  }
+
+  /* Reduce left padding so content doesn't run off small screens */
+  #journey .space-y-32 { padding-left: 0.5rem; }
+}
+
 /* make sure hidden placeholder class still works */
 .reveal-on-scroll { opacity: 0; transform: translateY(30px); }
 .reveal-on-scroll.active { opacity: 1; transform: translateY(0); }
