@@ -85,9 +85,9 @@
 #journey .reveal-on-scroll { opacity: 1 !important; transform: none !important; }
 
 /* Make sure the left image is visible and not cropped too aggressively on small screens */
-#journey img { object-position: center; }
+#journey img { object-fit: fill; object-position: center; width: auto; }
 @media (max-width: 768px) {
-  #journey img { max-height: 22rem; width: 100%; height: auto; }
+  #journey img { object-fit: fill; width: auto; height: auto; }
   #journey .space-y-32 { padding-left: 0.75rem; }
 }
 
