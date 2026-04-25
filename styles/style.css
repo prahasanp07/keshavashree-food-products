@@ -36,3 +36,39 @@
 #no-products.hidden {
   display: none !important;
 }
+
+/* Reviews */
+.review-card {
+  min-height: 12rem;
+}
+.review-card .material-symbols-outlined {
+  background: rgba(255,255,255,0.6);
+  border-radius: 0.5rem;
+}
+
+/* Ensure reviews section has strong contrast */
+#reviews {
+  color: #1e1b13; /* dark text for headings and body */
+  position: relative;
+  z-index: 9999; /* raise high to avoid stacking issues */
+}
+
+#reviews .review-card {
+  background: #ffffff; /* ensure card bg is white for contrast */
+  color: #1e1b13;
+}
+
+#reviews h2,
+#reviews h3,
+#reviews .review-card p,
+#reviews .review-card .font-headline,
+#reviews .review-card .text-xs {
+  color: #1e1b13 !important;
+}
+
+/* Make sure cards are fully opaque and visible */
+#reviews .review-card { opacity: 1 !important; transform: none !important; }
+
+/* make sure hidden placeholder class still works */
+.reveal-on-scroll { opacity: 0; transform: translateY(30px); }
+.reveal-on-scroll.active { opacity: 1; transform: translateY(0); }
