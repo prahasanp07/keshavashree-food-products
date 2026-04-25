@@ -21,3 +21,18 @@
 }
 
 /* You can add further global styles here. */
+
+/* Tab button styling fallback (applies when Tailwind utilities may not be available) */
+.menu-tab {
+  color: rgba(18, 71, 56, 0.4);
+  padding-bottom: 0.75rem;
+}
+.menu-tab.is-active {
+  color: #124738;
+  border-bottom: 2px solid #124738;
+}
+
+/* No-products placeholder visibility tweak */
+#no-products.hidden {
+  display: none !important;
+}

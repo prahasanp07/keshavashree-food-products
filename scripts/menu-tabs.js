@@ -1,5 +1,5 @@
 // Menu tabs interaction: filters products by data-category
-document.addEventListener('DOMContentLoaded', () => {
+(() => {
   const tabs = Array.from(document.querySelectorAll('[data-tab]'));
   const items = Array.from(document.querySelectorAll('[data-category]'));
   const noProducts = document.getElementById('no-products');
@@ -7,15 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function setActive(tabEl) {
     const selected = tabEl.dataset.tab;
 
-    // style tabs: active vs inactive
-    tabs.forEach(t => {
-      t.classList.remove('border-b-2', 'border-primary');
-      t.classList.remove('text-primary');
-      t.classList.add('text-primary/40');
-    });
-    tabEl.classList.add('border-b-2', 'border-primary');
-    tabEl.classList.remove('text-primary/40');
-    tabEl.classList.add('text-primary');
+    // style tabs via is-active class for reliability
+    tabs.forEach(t => t.classList.remove('is-active'));
+    tabEl.classList.add('is-active');
 
     // show/hide items
     let visibleCount = 0;
@@ -38,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // initialize: pick the first tab with border (if any) or first tab
   const initial = tabs.find(t => t.classList.contains('border-b-2')) || tabs[0];
-  setActive(initial);
+  if (initial) setActive(initial);
 
   tabs.forEach(tab => {
     tab.addEventListener('click', (e) => {
@@ -46,4 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setActive(tab);
     });
   });
-});
+
+  // debug (remove in production if not needed)
+  // console.log('menu-tabs initialized', { tabsCount: tabs.length, itemsCount: items.length });
+})();
